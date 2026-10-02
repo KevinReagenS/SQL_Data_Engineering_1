@@ -40,14 +40,18 @@ SELECT 'Skills Dim', COUNT(*) FROM skills_dim
 UNION ALL
 SELECT 'Skills Job Dim', COUNT(*) FROM skills_job_dim;
 
+SELECT '----------------------------------------------------------------------------------' AS info;
 SELECT '| Company Dimension Table Sample |' AS info;
 SELECT * FROM company_dim LIMIT 5;
 
+SELECT '----------------------------------------------------------------------------------' AS info;
 SELECT '| Job Postings Table Sample |' AS info;
 SELECT * FROM job_postings_fact LIMIT 5;
 
+SELECT '----------------------------------------------------------------------------------' AS info;
 SELECT '| Skills Dimension Table Sample |' AS info;
 SELECT * FROM skills_dim LIMIT 5;
 
+SELECT '----------------------------------------------------------------------------------' AS info;
 SELECT '| Skills and Job Bridge Table Sample |' AS info;
 SELECT * FROM skills_job_dim LIMIT 5;
