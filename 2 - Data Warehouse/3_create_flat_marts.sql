@@ -20,7 +20,7 @@ SELECT
     jpf.job_country,
     jpf.salary_rate,
     jpf.salary_year_avg,
-    jpf.salary_hour_avg,
+    jpf.salary_hour_avg,s
 
     -- Company Dimension Table
     cd.company_id,
