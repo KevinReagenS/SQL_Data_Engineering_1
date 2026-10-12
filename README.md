@@ -9,9 +9,13 @@
 
 ## 💡 Solution
 
-<!--
-Usulan Solusi
--->
+Draft answer for each point on the problems:
+1. Data warehouse / data lakehouse that unite all scattered data
+2. Data marts that contain specific department data for them to access
+3. Data warehouse / data lakehouse instead of operational database
+4. Data validation
+
+<font color='red'> **Final Solution** </font> → Build a data warehouse that unites all scattered data sources, do a data validation, then create data marts for different departments.
 
 ## 🧾 Specification
 
