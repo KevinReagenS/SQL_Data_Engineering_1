@@ -19,9 +19,7 @@ Draft answer for each point on the problems:
 
 ## 🧾 Specification
 
-<!--
-Isi dengan gambar keseluruhan diagram data warehouse dan data mart
--->
+<img src="images/specification.png" alt="Description">
 
 ## 🧩 Data Warehouse Decomposition
 
