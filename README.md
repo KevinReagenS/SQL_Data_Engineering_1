@@ -34,3 +34,9 @@ Dekomposisi setiap sistem
 <!--
 Display the query and the sample result
 -->
+
+## 🧠 Skill Display
+
+<!--
+List all the skills I've learnt in this project
+-->
