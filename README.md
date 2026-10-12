@@ -21,7 +21,7 @@ Draft answer for each point on the problems:
 
 <img src="images/specification.png" alt="Description">
 
-## 🧩 Data Warehouse Decomposition
+## 🧩 Decomposition
 
 <!--
 Dekomposisi setiap sistem
