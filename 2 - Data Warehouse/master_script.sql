@@ -1,8 +1,11 @@
 -- Create Table
-.read 1_create_tables.sql
+.read "2 - Data Warehouse/1_create_tables.sql"
 
 -- Load Contents into Tables
-.read 2_load_schemas.sql
+.read "2 - Data Warehouse/2_load_schemas.sql"
 
 -- Create Flat Marts Schemata and CTAS
-.read 3_create_flat_marts.sql
+.read "2 - Data Warehouse/3_create_flat_mart.sql"
+
+-- Create Skill Marts
+.read "2 - Data Warehouse/4_create_skill_mart.sql"
