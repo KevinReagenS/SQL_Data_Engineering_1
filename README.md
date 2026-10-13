@@ -1,4 +1,4 @@
-# <center> 👷🏻‍♂️ Data Engineering Project: Data Warehouse + Data Marts 👷🏻‍♂️ </center>
+# <center> Data Engineering Project: Data Warehouse + Data Marts </center>
 
 ## 🚨 The Problems
 
@@ -49,7 +49,7 @@ After loading all the data into one singular source, the data warehouse is now r
 ### Data Marts
 
 For the data marts, I have built three data marts:
-1. Flat Marts
+1. Flat Marts [SQL File](/Data%20Warehouse%20&%20Data%20Marts/3_create_flat_mart.sql)
 
     Instead of using star schema like the datasets in the main schemata, flat mart is a data mart built as one wide and denormalized table, consisting of facts and descriptive column into a single table. But, what good is flat mart for?
 
@@ -57,7 +57,7 @@ For the data marts, I have built three data marts:
     
     1.2 **Daily Case**: This mart is optimized for daily reporting, especially where the report is mostly similar everyday and the rows are humongous. For the joins are done once in the load section, query will not be demanding on the engine and cut the cost efficiently.
 
-2. Skill Marts
+2. Skill Marts [SQL File](/Data%20Warehouse%20&%20Data%20Marts/4_create_skill_mart.sql)
 
     In this particular case, this mart is specifically built for people who want to analyze the trend for each skill and each job. It contains three tables:
 
@@ -67,7 +67,7 @@ For the data marts, I have built three data marts:
 
     2.3 **Skill Demand Fact**: Main Table for Analysis
 
-3. Priority Job Marts
+3. Priority Job Marts [Priority Mart](/Data%20Warehouse%20&%20Data%20Marts/5_create_priority_mart.sql) | [Incremental Update](/Data%20Warehouse%20&%20Data%20Marts/6_incremental_update.sql)
     
     This mart is specifically built maybe for HR Department who casually needs to update the priority level of job title for hiring purpose. The distinct most important feature in this the incremental update. I incorporate ```MERGE INTO``` into the script.
 
@@ -77,6 +77,19 @@ In the CLI terminal, type
 
 ```duckdb md:data_warehouse_marts -c ".read 'Data Warehouse & Data Marts/master_script.sql'"```
 
-The master script is able to be executed multiple times.
+The master script is able to be executed multiple times because it is idempotent.
 
 ## 🧠 Skill Display
+- Star schema data warehouse modeling (facts & dimensions, PK/FK constraints)
+- ELT pipelines: ingesting CSV data from cloud storage (GCS) into DuckDB/MotherDuck
+- Data validation (row counts, sampling, grouped checks)
+- Denormalized flat mart design for self-service reporting
+- Semi-structured data modeling with ARRAY_AGG + STRUCT_PACK
+- Custom date dimension construction (DATE_TRUNC, EXTRACT)
+- Conditional aggregation & DuckDB's GROUP BY ALL
+- CTEs for staged, readable transformation logic
+- Incremental updates via MERGE INTO (upsert + delete-sync)
+- Idempotent, re-runnable orchestration scripts
+
+## References
+Luke Barousse & Kelly Adams
