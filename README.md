@@ -21,6 +21,14 @@ Draft answer for each point on the problems:
 
 <img src="images/specification.png" alt="Description">
 
+## 💻 Tech Stack
+
+☁️ Cloud Data Warehouse ➜ Motherduck <br>
+🛢️ Database Engine ➜ DuckDB <br>
+🆚 VS Code ➜ Code Editor & Debugger <br>
+</> Git & GitHub ➜ Version Control <br>
+💾 Google Cloud Storage (GCS) ➜ Cloud Storage for Data Sources
+
 ## 🧩 Decomposition
 
 ### Data Sources
@@ -72,4 +80,3 @@ In the CLI terminal, type
 The master script is able to be executed multiple times.
 
 ## 🧠 Skill Display
-
