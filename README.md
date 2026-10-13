@@ -65,12 +65,11 @@ For the data marts, I have built three data marts:
 
 ## 📝 Final Testing
 
-<!--
-Display the query and
--->
+In the CLI terminal, type
+
+```duckdb md:data_warehouse_marts -c ".read 'Data Warehouse & Data Marts/master_script.sql'"```
+
+The master script is able to be executed multiple times.
 
 ## 🧠 Skill Display
 
-<!--
-List all the skills I've learnt in this project
--->
